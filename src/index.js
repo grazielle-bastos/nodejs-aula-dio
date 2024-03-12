@@ -14,16 +14,9 @@ router.get("/contato", (req, res)=>{
 
 app.use(router)
 
-app.listen(3333, ()=>{
+app.listen(process.env.PORT || 3333, ()=>{
     console.log("servidor rodando")
 })
-
-
-
-
-
-
-
 
 /*Criação de servidor local, sem a biblioteca express:
 const http = require("http")
