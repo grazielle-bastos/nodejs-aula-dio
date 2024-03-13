@@ -4,7 +4,7 @@ const path = require("path")
 const app = express()
 const router = express.Router()
 
-const pagesPath = path.join(__dirname, "src", "pages")
+const pagesPath = path.join(__dirname, "pages")
 
 router.get("/", (req, res)=>{
     res.sendFile(path.join(pagesPath, "home.html"))
